@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <h2 id="title">Conference demo - Composite recording</h2>
+      <form id="create">
+          <input type="text" name="conference_name" id="conference-name" [(ngModel)]="conferenceName" placeholder="Enter your Conference name" autocomplete="off">
+          <button id="create_conference" (click)="createConference()">Join conference</button>
+      </form>
+
+      <!--  START RECORDING COMPOSITE-->
+      <div id="recordStart">
+          <button type="submit" id="startCompositeRecording" (click)="startCompositeRecording()"> Start composite recording </button>
+      </div>
+      <!-- STOP RECORDING COMPOSITE-->
+      <div id="recordStop">
+          <button id="stopCompositeRecording" (click)="stopCompositeRecording()"> Stop composite recording </button>
+      </div>
+      <!-- GET THE RECORDING URL -->
+      <div type="text" class="inner" >
+          <h3 id='recordingInfo' class='ul'> </h3>
+      </div>
+
+      <div id="conference">
+          <div id="remote-container"></div>
+          <div id="local-container"></div>
+      </div>
+  </div>
+
+</ion-content>

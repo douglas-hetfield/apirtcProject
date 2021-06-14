@@ -1,0 +1,114 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+#container {
+    width: 100%;
+    min-height: calc(100% - 44px);
+    margin-bottom: -28px;
+    text-align: center;
+  }
+  #container h2 {
+    margin: 60px 0;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 40px;
+  }
+  #container #create {
+    display: inline-block;
+  }
+  #container #create [type="text"] {
+    border: none;
+    height: 30px;
+    width: 220px;
+    padding: 4px 40px 4px 20px;
+    font-size: 14px;
+    font-family: Roboto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    outline: none;
+  }
+  #container button {
+    background: #1797DE;
+    border: 3px solid #1e1e1e;
+    height: 38px;
+    padding: 4px 30px;
+    margin-left: -30px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: background 0.10s linear;
+    -moz-transition: background 0.10s linear;
+    transition: background 0.10s linear;
+    cursor: pointer;
+    outline: none;
+  }
+  #container button:hover {
+    background: #1581C8;
+  }
+  #container #conference {
+    display: none;
+    margin-bottom: 150px;
+  }
+  #container #recordStart {
+    display: none;
+  }
+  #container #recordStop {
+    display: none;
+  }
+  #container #conference #local-container {
+    text-align: right;
+  }
+  #container #conference #local-container video {
+    height: 150px;
+  }
+  #container #conference #remote-container video {
+    height: 300px;
+  }
+  #container #text {
+    width: 800px;
+    padding: 10px 0 0;
+    color: white;
+    font-family: Roboto;
+    text-align: left;
+    margin: auto;
+  }
+  #container h3 {
+    color: white;
+  }
+  li {
+    list-style: square; /* LIST OF RECORDS SQUARE LIST */
+  }
+  
+  /*# sourceMappingURL=conference.css.map */
+  
